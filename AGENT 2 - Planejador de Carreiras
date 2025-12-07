@@ -1,181 +1,253 @@
-Você é um planejador especializado em criar roadmaps personalizados de carreira em tecnologia.
-
-Carreira em Tecnologia
-
-Você é um planejador especializado em criar roadmaps personalizados de carreira em tecnologia.
-
-
-## 🎯 SUA MISSÃO
-
-Receber as informações do Agent 1 e gerar um plano completo de estudos com:
-- Visão do dia a dia
-- Mapa de skills
-- Roadmap de 90 dias
-- Projeto de portfólio
-- Roteiro de entrevistas
-- Trilha DIO
-
-
-## 📥 DADOS QUE VOCÊ RECEBE
-
-O Agent 1 vai te passar:
-- CARREIRA_ESCOLHIDA: (nome da carreira)
-- HORAS_SEMANA: (disponibilidade)
-- EXPERIENCIA: (zero/iniciante/alguma)
-- OBJETIVO: (primeiro emprego/transição/crescimento)
-- PREFERENCIA: (pessoas/dados/código)
-- INTERESSES: (tecnologias mencionadas)
-
-
-## 🎬 INICIAR CONVERSA
-
-"Olá! Recebi suas informações do entrevistador. 
-
-Vejo que você escolheu (CARREIRA_ESCOLHIDA) e tem (HORAS_SEMANA) horas por semana para estudar. Perfeito!
-
-Vou montar agora seu plano completo personalizado..."
-
-
-## 📦 GERAR PLANO COMPLETO
-
-(use exatamente este formato)
+## RESULTADO DO PLANO DE ESTUDOS GERADO PELO AGENT 2:
 
 🧩 VISÃO DO DIA A DIA
 
-Como é o trabalho de um(a) (CARREIRA):
+Como é o trabalho de um(a) Engenheiro(a) de Machine Learning:
 
-- (atividade típica 1)
-- (atividade típica 2)
-- (atividade típica 3)
-- (atividade típica 4)
-- (atividade típica 5)
+    Preparação de dados: coletar, limpar e transformar dados, garantindo qualidade e rastreabilidade.
+
+    Modelagem e experimentação: projetar, treinar e comparar modelos, com pipelines reprodutíveis.
+
+    MLOps e produção: versionar dados/modelos, empacotar e fazer deploy de APIs/serviços, monitorar drift e performance.
+
+    Infra e automação: orquestrar jobs, agendar retraining, gerenciar recursos em cloud e containers.
+
+    Colaboração: trabalhar com Data Scientists, Engenharia de Dados e Produto; escrever documentação clara e manter códigos revisados em GitHub.
 
 🧠 MAPA DE SKILLS
 
 CORE SKILLS (essenciais):
-- (skill 1)
-- (skill 2)
-- (skill 3)
+
+    Python para dados: funções, módulos, tipagem, testes, logging, virtualenv.
+
+    Machine Learning clássico: regressão, classificação, validação cruzada, tuning com GridSearchCV.
+
+    MLOps básico: Git/GitHub, versionamento de datasets/modelos, CI/CD simples, conteinerização com Docker.
 
 NICE-TO-HAVE (complementares):
-- (skill 1)
-- (skill 2)
+
+    NLP e séries temporais: vetorização (TF-IDF), embeddings; features para timeseries, métricas específicas.
+
+    Cloud foundations: uso de serviços gerenciados (AWS/GCP/Azure) para armazenamento, deploy e jobs.
 
 FERRAMENTAS E TECNOLOGIAS:
-- (tecnologia 1)
-- (tecnologia 2)
-- (tecnologia 3)
 
-📅 ROADMAP DE 90 DIAS
+    Pandas
 
-ADAPTADO PARA: (HORAS_SEMANA) horas/semana
+    Scikit-Learn
 
-MÊS 1 - FUNDAMENTOS
+    Git & GitHub (Issues, PRs, Projects, Actions)
+
+📅 ROADMAP DE 120 DIAS
+
+ADAPTADO PARA: 4 horas/semana (menos de 5h → foco no essencial, prazos estendidos, GitHub em todas as fases)
+MÊS 1 - FUNDAMENTOS SÓLIDOS
 
 SEMANA 1-2:
-- (meta específica 1)
-- (meta específica 2)
+
+    Python para dados: revisão de coleções, funções puras, argparse, ambientes virtuais.
+
+    Git/GitHub básico: git flow, commits semânticos, criação de README padrão.
 
 SEMANA 3-4:
-- (meta específica 1)
-- (meta específica 2)
 
-MÊS 2 - PRÁTICA
+    Pandas avançado: merges, groupby, pivot, tratamento de nulos e outliers.
+
+    Estatística aplicada: distribuição, variância, correlação; visualização rápida com matplotlib/seaborn.
 
 SEMANA 5-6:
-- (meta específica 1)
-- (meta específica 2)
+
+    Scikit-Learn core: Pipeline, ColumnTransformer, escalonamento, one-hot, train_test_split.
+
+    Validação: cross_val_score, métricas para classificação e regressão, confusão e curvas ROC/PR.
 
 SEMANA 7-8:
-- (meta específica 1)
-- (meta específica 2)
 
-MÊS 3 - PORTFÓLIO E PREPARAÇÃO
+    GitHub para dados/ML: versionar datasets (LFS opcional), criar Issues, abrir PRs, templates, Projects (Kanban).
+
+    Documentação: padrões em Markdown, estrutura de projeto (src/, data/, notebooks/).
+
+MÊS 2 - PRÁTICA ORIENTADA A PRODUÇÃO
 
 SEMANA 9-10:
-- (meta específica 1)
-- (meta específica 2)
+
+    Modelos de classificação: Logistic Regression, RandomForest, métricas e interpretação.
+
+    Tuning: GridSearchCV/RandomizedSearchCV, análise de importância de features.
 
 SEMANA 11-12:
-- (meta específica 1)
-- (meta específica 2)
+
+    Clustering: K-Means, DBSCAN; avaliação (silhouette), uso em segmentação.
+
+    Pipelines reprodutíveis: scripts CLI para preprocess e treino.
+
+SEMANA 13-14:
+
+    Docker básico: Dockerfile para app de inferência, boas práticas (camadas, .dockerignore).
+
+    API de inferência: FastAPI ou Flask, endpoint /predict, validação com pydantic.
+
+SEMANA 15-16:
+
+    GitHub Actions (CI): lint com ruff/flake8, testes com pytest, build Docker.
+
+    CD simples: publicação de imagem em registry público (opcional), release tags.
+
+MÊS 3 - PORTFÓLIO PROFISSIONAL
+
+SEMANA 17-18:
+
+    Projeto NLP (sentimentos): dataset público (IMDb/CSV), pipeline de texto (TF-IDF/linear).
+
+    Experimentos: comparação de modelos, registro de resultados (tabelas/plots).
+
+SEMANA 19-20:
+
+    API + Docker do projeto: embalagem do modelo, endpoint documentado, docker run funcional.
+
+    Monitoramento inicial: logs de requisição, latência, contadores de erro.
+
+SEMANA 21-22:
+
+    GitHub refinamento: README de produto, badges de build, roadmap, guia de contribuição.
+
+    Apresentação: notebook executivo e slides curtos com problema → solução → impacto.
+
+SEMANA 23-24:
+
+    Entrevistas técnicas: simulações, códigos de casa, storytelling de projetos.
+
+    Networking: otimização de LinkedIn e README do perfil, catálogo de repositórios.
+
+MÊS 4 - CONSOLIDAÇÃO E TRANSIÇÃO
+
+SEMANA 25-26:
+
+    Séries temporais (introdução): features (lags, rolling), métricas (MAE/MAPE), baseline.
+
+    Casos de uso de engenharia: agendamento de retraining (cron), estrutura de pastas de dados.
+
+SEMANA 27-28:
+
+    MLOps 101: princípios de versionamento, reproducibilidade e monitoramento de drift.
+
+    Cloud hands-on (opcional): deploy simples em serviço gerenciado gratuito/baixo custo.
+
+SEMANA 29-30:
+
+    Projeto 2 (timeseries/regressão): previsão simples (ex.: demanda/energia).
+
+    Automação: script de inferência batch, logging e salvamento de saída.
+
+SEMANA 31-32:
+
+    Finalização de portfólio: revisão de código, testes, documentação e releases.
+
+    Plano de transição: target de vagas, mensagens de abordagem, calendário de candidaturas.
 
 🚀 PROJETO DE PORTFÓLIO
 
-PROJETO: (nome do projeto)
+PROJETO: SentimentML – Classificador de Sentimentos com API e Docker
 
-O QUE FAZER:
-(descrição clara do escopo)
+O QUE FAZER: Construir um pipeline de NLP com Scikit-Learn para classificar sentimentos, empacotar em uma API de inferência (FastAPI), conteinerizar com Docker, integrar CI (lint/test/build) via GitHub Actions e documentar como produto.
 
 ENTREGÁVEIS:
-- (entregável 1)
-- (entregável 2)
-- (entregável 3)
+
+    Código reprodutível: src/ com preprocess, treino e serviço de inferência.
+
+    API funcional: endpoint /predict com schema e exemplos.
+
+    Infra mínima: Dockerfile, docker-compose opcional, CI configurada (lint/test/build).
 
 CRITÉRIOS DE ACEITAÇÃO:
-- (critério 1)
-- (critério 2)
-- (critério 3)
 
-DICA: (dica prática para executar o projeto)
+    Métricas: F1 ≥ 0,75 em validação externa.
 
+    Reprodutibilidade: make train/python -m src.train executa fim-a-fim.
+
+    Deploy local: docker run responde em < 150ms mediana para requests curtos.
+
+DICA: Comece simples (TF-IDF + LinearSVC), foque em pipeline limpo e documentação impecável; depois itere em métricas.
 💬 ROTEIRO DE ENTREVISTAS
 
-PERGUNTA 1: (pergunta comum júnior)
-COMO RESPONDER:
-(exemplo estruturado de resposta)
+PERGUNTA 1: Como garantir reprodutibilidade em ML? COMO RESPONDER:
 
-PERGUNTA 2: (pergunta comum júnior)
-COMO RESPONDER:
-(exemplo estruturado de resposta)
+    Contexto: dados, código, ambiente e hiperparâmetros precisam ser versionados.
 
-PERGUNTA 3: (pergunta comum júnior)
-COMO RESPONDER:
-(exemplo estruturado de resposta)
+    Prática: pipelines (sklearn.Pipeline), seeds, requirements.txt/lockfile, Docker, GitHub Actions para testes.
 
-PERGUNTA 4: (pergunta comum júnior)
-COMO RESPONDER:
-(exemplo estruturado de resposta)
+PERGUNTA 2: O que é data leakage e como evitar? COMO RESPONDER:
 
-PERGUNTA 5: (pergunta comum júnior)
-COMO RESPONDER:
-(exemplo estruturado de resposta)
+    Definição: informação do futuro/validação vaza para treino.
+
+    Prevenção: aplicar transformações dentro de Pipeline, split antes de preprocess, isolamento de folds.
+
+PERGUNTA 3: Quando usar ROC-AUC vs. PR-AUC? COMO RESPONDER:
+
+    ROC-AUC: bom quando classes balanceadas.
+
+    PR-AUC: preferível em datasets desbalanceados, foca em precisão/recall da classe positiva.
+
+PERGUNTA 4: Como você faria o deploy de um modelo? COMO RESPONDER:
+
+    Passos: salvar artefato (pickle/ONNX), API (FastAPI), Dockerfile, testes, monitoramento (logs/latência), rollback via tags/releases.
+
+PERGUNTA 5: Explique sua estratégia de experimentação e tuning. COMO RESPONDER:
+
+    Abordagem: baseline simples, validação cruzada, grid/random search, análise de erro, seleção pelo objetivo de negócio.
 
 🎓 TRILHA DIO RECOMENDADA
 
-TRILHA: (nome específico da trilha/bootcamp DIO)
+TRILHA: Bootcamp Ciência de Dados com Python (complementado por módulos de Git/GitHub e projetos práticos)
 
-POR QUE ESSA TRILHA:
-(explicação de como conecta com a carreira)
+POR QUE ESSA TRILHA: Cobre seus interesses diretos (Python, Pandas, Scikit-Learn) com projetos aplicados; complemente com estudos práticos de GitHub (Issues, PRs, Actions) integrados ao portfólio para demonstrar engenharia e MLOps básico.
 
 PRÓXIMOS PASSOS:
-1. Acesse dio.me
-2. Busque por "(nome da trilha)"
-3. Inscreva-se gratuitamente
-4. Siga o cronograma junto com este roadmap
 
+    Acesse dio.me
+
+    Busque por "Bootcamp Ciência de Dados com Python"
+
+    Inscreva-se gratuitamente
+
+    Siga o cronograma junto com este roadmap
+
+🗂 Planilha Excel detalhada (semanas, tópicos, atividades, entregáveis, tempo)
+Semana	Tópicos	Atividades	Entregáveis	Tempo (h/sem)
+1	Python para dados	Funções, módulos, env, argparse	Notebook de revisão	4
+2	Git/GitHub básico	Git flow, commits, README	Repo inicial com README	4
+3	Pandas avançado I	merge, groupby, pivot	Notebook com exemplos	4
+4	Estatística aplicada	Distribuições, correlação, viz	Relatório simples	4
+5	Pipelines sklearn	Pipeline, ColumnTransformer	Script preprocess.py	4
+6	Validação e métricas	CV, ROC/PR, confusão	Notebook de métricas	4
+7	GitHub para ML	Issues, PRs, Projects	Board Kanban + templates	4
+8	Documentação	Estrutura src/, data/	Guia de projeto (MD)	4
+9	Classificação I	Logistic Regression	Notebook baseline	4
+10	Classificação II	RandomForest + tuning	Comparativo de modelos	4
+11	Clustering I	K-Means	Resultado + silhouette	4
+12	Clustering II	DBSCAN e análise	Relatório de segmentos	4
+13	Docker básico	Dockerfile, .dockerignore	Imagem construída	4
+14	API de inferência	FastAPI/Flask + schema	Endpoint /predict	4
+15	CI com Actions	Lint, testes	Workflow CI	4
+16	CD simples	Build Docker em CI	Release com tag	4
+17	Projeto NLP – dados	Coleta, limpeza, split	Dataset pronto	4
+18	Projeto NLP – modelo	TF-IDF + LinearSVC	Pipeline treinado	4
+19	Projeto NLP – API	Empacotar modelo	API funcional	4
+20	Projeto NLP – Docker	Conteinerizar app	docker run ok	4
+21	Monitoramento	Logs, latência, erros	Painel simples	4
+22	GitHub refinamento	README, badges, roadmap	Repo polido	4
+23	Apresentação	Notebook executivo, slides	Deck + notebook	4
+24	Entrevistas	Simulações técnicas	Perguntas/respostas	4
+25	Timeseries I	Features (lags, rolling)	Notebook baseline	4
+26	Timeseries II	Métricas (MAE/MAPE)	Relatório	4
+27	MLOps 101	Versionamento, drift	Checklist MLOps	4
+28	Cloud (opcional)	Deploy gerenciado	PoC de deploy	4
+29	Projeto 2 – dados	Seleção e preparação	Dataset pronto	4
+30	Projeto 2 – modelo	Regressão/timeseries	Pipeline treinado	4
+31	Projeto 2 – automação	Batch inferência + logs	Script infer_batch.py	4
+32	Consolidação	Revisão final + candidatura	Portfólio + plano	4
+
+Dica: se preferir, exporte esta tabela para Excel e adicione uma coluna “Status” (A fazer/Em progresso/Concluído) e “Notas”.
 
 ✨ Seu plano está pronto!
 
-Lembre-se: o mais importante é a constância, não a velocidade. Comece pela Semana 1 e vá no seu ritmo.
-
-Tem alguma dúvida sobre o plano? Posso detalhar alguma parte específica?
-
-
-## ⚙️ REGRAS DE PERSONALIZAÇÃO
-
-HORAS/SEMANA:
-- Menos de 5h: estender prazos, focar no essencial
-- 5-10h: roadmap padrão
-- Mais de 15h: adicionar conteúdo extra, projetos avançados
-
-EXPERIÊNCIA:
-- Zero: explicações mais didáticas, fundamentos reforçados
-- Iniciante: equilibrar teoria e prática
-- Alguma: focar em gaps específicos e portfolio
-
-OBJETIVO:
-- Primeiro emprego: enfatizar portfolio e entrevistas
-- Transição: destacar transferência de skills
-- Crescimento: focar em skills avançadas
-\
